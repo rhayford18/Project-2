@@ -285,7 +285,7 @@ def page_stocks(user, data):
     else:
         st.info("No strong signals today. Hold your positions.")
 
-# ── transaction history ───────────────────────────────────────────────────────
+#transaction history
 def page_history(user, data):
     st.header("📋 Transaction History")
     txns = data[user]["transactions"]
