@@ -308,7 +308,7 @@ def page_history(user, data):
         elif kind == "sell":
             st.success(f"[{date}]  💰 Sold {t['shares']} × {t['ticker']} @ ${t['price']:,.2f}  = ${t['total']:,.2f}")
 
-# ── main ──────────────────────────────────────────────────────────────────────
+#main
 def main():
     st.set_page_config(page_title="PyBank", page_icon="🏦", layout="wide")
 
