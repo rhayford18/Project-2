@@ -61,9 +61,9 @@ def recommend(portfolio):
             recs.append((ticker, info["name"], price, change, "🟡 Watch"))
     return recs[:4]
 
-# ── auth pages ────────────────────────────────────────────────────────────────
+#auth pages
 def page_login():
-    st.title("🏦 PyBank + Trading")
+    st.title("🏦 Caldwell Banking App")
     tab1, tab2 = st.tabs(["Log In", "Create Account"])
 
     with tab1:
@@ -270,7 +270,7 @@ def page_stocks(user, data):
                 st.success(f"Sold {sell_shares} share(s) of {sell_ticker} for ${sell_value:,.2f}")
                 st.rerun()
 
-    # recommendations
+    #recommendations
     st.divider()
     st.subheader("🤖 AI Stock Recommendations")
     st.caption("Based on today's market movement and your current portfolio")
@@ -308,7 +308,7 @@ def page_history(user, data):
         elif kind == "sell":
             st.success(f"[{date}]  💰 Sold {t['shares']} × {t['ticker']} @ ${t['price']:,.2f}  = ${t['total']:,.2f}")
 
-#main
+#main loop
 def main():
     st.set_page_config(page_title="PyBank", page_icon="🏦", layout="wide")
 
