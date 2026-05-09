@@ -6,7 +6,7 @@ import datetime
 import random
 from pathlib import Path
 
-# ── data helpers ──────────────────────────────────────────────────────────────
+#Data helpers
 DATA_FILE = "data/users.json"
 
 def load_data():
@@ -24,7 +24,7 @@ def save_data(data):
 def hash_pw(pw):
     return hashlib.sha256(pw.encode()).hexdigest()
 
-# ── stock helpers ─────────────────────────────────────────────────────────────
+#Stock helpers
 STOCKS = {
     "AAPL": {"name": "Apple Inc.",        "base": 178.0},
     "TSLA": {"name": "Tesla Inc.",         "base": 245.0},
@@ -102,7 +102,7 @@ def page_login():
                     save_data(data)
                     st.success("Account created! You can now log in.")
 
-# ── dashboard ─────────────────────────────────────────────────────────────────
+#Dashboard
 def page_dashboard(user, data):
     balance   = data[user]["balance"]
     portfolio = data[user]["portfolio"]
