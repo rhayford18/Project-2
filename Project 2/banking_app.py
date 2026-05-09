@@ -199,7 +199,7 @@ def page_transfer(user, data):
             st.success(f"Sent ${amount:,.2f} to {recipient}")
             st.rerun()
 
-# ── stocks ────────────────────────────────────────────────────────────────────
+#Stocks
 def page_stocks(user, data):
     st.header("📈 Stock Trading")
     balance   = data[user]["balance"]
