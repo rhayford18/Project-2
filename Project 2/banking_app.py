@@ -3,7 +3,7 @@ import json
 import os 
 import hashlib
 import datetime
-import random
+import 
 from pathlib import Path
 
 #Data helpers
@@ -136,8 +136,7 @@ def page_dashboard(user, data):
                 "Total Value": f"${value:,.2f}"
             })
         st.table(rows)
-
-# ── deposit / withdraw ────────────────────────────────────────────────────────
+#deposit and widthdraw
 def page_banking(user, data):
     st.header("💵 Deposit & Withdraw")
     balance = data[user]["balance"]
@@ -173,7 +172,7 @@ def page_banking(user, data):
                 st.success(f"Withdrew ${wd_amt:,.2f}")
                 st.rerun()
 
-# ── transfer ──────────────────────────────────────────────────────────────────
+#transfer
 def page_transfer(user, data):
     st.header("🔄 Transfer")
     balance = data[user]["balance"]

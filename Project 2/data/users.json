@@ -4,5 +4,342 @@
     "balance": 10000.0,
     "transactions": [],
     "portfolio": {}
+  },
+  "CDesouza": {
+    "password": "888521646f5dd2fde34e9319d7c3a8da99ee63046df16c60d446b48c3aafd031",
+    "balance": 272.2799999999843,
+    "transactions": [
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:31.885463"
+      },
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:36.170312"
+      },
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:37.064401"
+      },
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:37.517738"
+      },
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:37.843346"
+      },
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:38.192797"
+      },
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:38.618113"
+      },
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:39.940993"
+      },
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:40.655602"
+      },
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:41.507578"
+      },
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:42.695063"
+      },
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:43.719869"
+      },
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:44.860301"
+      },
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:45.582125"
+      },
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:46.464707"
+      },
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:47.347335"
+      },
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:48.012064"
+      },
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:48.790254"
+      },
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:50.456488"
+      },
+      {
+        "type": "buy",
+        "ticker": "MSFT",
+        "shares": 1,
+        "price": 402.81,
+        "total": 402.81,
+        "date": "2026-05-11 00:06:51.257228"
+      },
+      {
+        "type": "deposit",
+        "amount": 1500.0,
+        "date": "2026-05-11 00:07:23.401645"
+      },
+      {
+        "type": "deposit",
+        "amount": 10000.0,
+        "date": "2026-05-11 00:07:41.662228"
+      },
+      {
+        "type": "deposit",
+        "amount": 10000.0,
+        "date": "2026-05-11 00:07:42.679106"
+      },
+      {
+        "type": "deposit",
+        "amount": 10000.0,
+        "date": "2026-05-11 00:07:43.469590"
+      },
+      {
+        "type": "deposit",
+        "amount": 10000.0,
+        "date": "2026-05-11 00:07:44.108384"
+      },
+      {
+        "type": "deposit",
+        "amount": 10000.0,
+        "date": "2026-05-11 00:07:44.411763"
+      },
+      {
+        "type": "deposit",
+        "amount": 10000.0,
+        "date": "2026-05-11 00:07:44.599145"
+      },
+      {
+        "type": "deposit",
+        "amount": 10000.0,
+        "date": "2026-05-11 00:07:45.097468"
+      },
+      {
+        "type": "deposit",
+        "amount": 10000.0,
+        "date": "2026-05-11 00:07:45.426527"
+      },
+      {
+        "type": "deposit",
+        "amount": 10000.0,
+        "date": "2026-05-11 00:07:45.657516"
+      },
+      {
+        "type": "deposit",
+        "amount": 10000.0,
+        "date": "2026-05-11 00:07:46.027641"
+      },
+      {
+        "type": "buy",
+        "ticker": "AAPL",
+        "shares": 1,
+        "price": 169.69,
+        "total": 169.69,
+        "date": "2026-05-11 00:07:55.205269"
+      },
+      {
+        "type": "buy",
+        "ticker": "AAPL",
+        "shares": 1,
+        "price": 169.69,
+        "total": 169.69,
+        "date": "2026-05-11 00:07:58.947081"
+      },
+      {
+        "type": "buy",
+        "ticker": "AAPL",
+        "shares": 1,
+        "price": 169.69,
+        "total": 169.69,
+        "date": "2026-05-11 00:07:59.779250"
+      },
+      {
+        "type": "buy",
+        "ticker": "AAPL",
+        "shares": 1,
+        "price": 169.69,
+        "total": 169.69,
+        "date": "2026-05-11 00:08:00.283413"
+      },
+      {
+        "type": "buy",
+        "ticker": "AAPL",
+        "shares": 1,
+        "price": 169.69,
+        "total": 169.69,
+        "date": "2026-05-11 00:08:00.690530"
+      },
+      {
+        "type": "buy",
+        "ticker": "AAPL",
+        "shares": 1,
+        "price": 169.69,
+        "total": 169.69,
+        "date": "2026-05-11 00:08:01.049489"
+      },
+      {
+        "type": "buy",
+        "ticker": "AAPL",
+        "shares": 1,
+        "price": 169.69,
+        "total": 169.69,
+        "date": "2026-05-11 00:08:01.220687"
+      },
+      {
+        "type": "buy",
+        "ticker": "AAPL",
+        "shares": 1,
+        "price": 169.69,
+        "total": 169.69,
+        "date": "2026-05-11 00:08:01.320643"
+      },
+      {
+        "type": "buy",
+        "ticker": "AAPL",
+        "shares": 100,
+        "price": 169.69,
+        "total": 16969.0,
+        "date": "2026-05-11 00:08:06.902687"
+      },
+      {
+        "type": "buy",
+        "ticker": "AAPL",
+        "shares": 100,
+        "price": 169.69,
+        "total": 16969.0,
+        "date": "2026-05-11 00:08:08.004913"
+      },
+      {
+        "type": "buy",
+        "ticker": "AAPL",
+        "shares": 100,
+        "price": 169.69,
+        "total": 16969.0,
+        "date": "2026-05-11 00:08:08.697692"
+      },
+      {
+        "type": "buy",
+        "ticker": "AAPL",
+        "shares": 100,
+        "price": 169.69,
+        "total": 16969.0,
+        "date": "2026-05-11 00:08:09.063128"
+      },
+      {
+        "type": "buy",
+        "ticker": "AAPL",
+        "shares": 100,
+        "price": 169.69,
+        "total": 16969.0,
+        "date": "2026-05-11 00:08:09.327767"
+      },
+      {
+        "type": "buy",
+        "ticker": "AAPL",
+        "shares": 100,
+        "price": 169.69,
+        "total": 16969.0,
+        "date": "2026-05-11 00:08:09.602492"
+      }
+    ],
+    "portfolio": {
+      "MSFT": 20,
+      "AAPL": 608
+    }
   }
 }
