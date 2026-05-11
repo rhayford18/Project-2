@@ -374,7 +374,7 @@ def page_history(user, data):
 
 #main loop
 def main():
-    st.set_page_config(page_title="PyBank", page_icon="🏦", layout="wide")
+    st.set_page_config(page_title="Caldwell Banking", page_icon="🏦", layout="wide")
 
     if "user" not in st.session_state:
         page_login()
