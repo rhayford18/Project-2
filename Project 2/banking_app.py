@@ -32,7 +32,9 @@ def check_password_strength(pw):
         errors.append("Your password needs to be at least 8 letters")
     if not any(c.issuper() for c in pw):
         errors.append("Your password needs at least one uppercase letter")
-    if not any()
+    if not any(c.isdigits() for c in pw):
+        errors.append("Your password needs to have a number in it")
+    return errors
 #Stock helpers
 STOCKS = {
     "AAPL": "Apple Inc.",
@@ -103,6 +105,17 @@ def page_login():
         new_user = st.text_input("Choose a username", key="ca_user")
         new_pw   = st.text_input("Choose a password", type="password", key="ca_pw")
         new_pw2  = st.text_input("Confirm password",  type="password", key="ca_pw2")
+        
+        if new_pw:
+            errors = check_password_strength(new_pw)
+            strength = 3 - len(errors)
+            if strength == 3
+                st.success("💪 Strong password")
+            elif strength == 2:
+                st.warning("🟡 Almost there — missing: " + ", ".join(errors))
+            else:
+                st.error()
+        
         if st.button("Create Account", use_container_width=True):
             if not new_user or not new_pw:
                 st.error("Username and password required.")
