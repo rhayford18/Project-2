@@ -27,7 +27,8 @@ def hash_pw(pw):
 #Stock helpers
 STOCKS = {
     "AAPL": "Apple Inc.",
-    ""
+    "TSLA": "Tesla.",
+    "GOOGL": "Google "
     
 }
 
