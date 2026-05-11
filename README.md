@@ -1,2 +1,2 @@
-# Project-2
-Hello
+# Caldwell Banking - Banking and Stock Trading App
+
