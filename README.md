@@ -13,3 +13,17 @@ A full-stack banking and stock trading simulator built with Python and Streamlit
 - Transaction History — Full log of every deposit, withdrawal, transfer, and trade
 
 # Tech Stack
+
+- Python — core language
+- Streamlit — web app framework
+- yfinance — live stock prices from Yahoo Finance
+- JSON — lightweight local data storage
+
+# How it works
+
+- Open the app and click Create Account
+- Pick a username and password — you start with $10,000
+- Go to Stocks to buy shares with live prices
+- Check Dashboard to see your net worth
+- Use Banking to deposit or withdraw cash
+- Use Transfer to send money to another user
