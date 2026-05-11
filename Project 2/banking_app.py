@@ -39,18 +39,22 @@ STOCKS = {
 @st.cache_data(ttl=300)
 def fetch_stock_data(ticker):
     try:
-        t = yf.Ticker(ticker):
+        t = yf.Ticker(ticker)
         info = t.fast_info
         price = round(float(info.last_price), 2)
         prev = round(float(info.previous_close), 2)
-        chnage = round(((price - prev) / prev) * 100, 2) if prev else 0.0
+        change = round(((price - prev) / prev) * 100, 2) if prev else 0.0
         return price, change
     except Exception:
         return None, None
     
 def get_price(ticker):
-    price, _ = fetch 
+    price, _ = fetch_stock_data(ticker)
+    return price or 0.0
 
+def get_change(ticker):
+    _, change = fetch_stock_data(ticker)
+    return change or 0.0
 
 
 def recommend(portfolio):
