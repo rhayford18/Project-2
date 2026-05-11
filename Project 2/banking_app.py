@@ -109,12 +109,12 @@ def page_login():
         if new_pw:
             errors = check_password_strength(new_pw)
             strength = 3 - len(errors)
-            if strength == 3
+            if strength == 3:
                 st.success("💪 Strong password")
             elif strength == 2:
                 st.warning("🟡 Almost there — missing: " + ", ".join(errors))
             else:
-                st.error()
+                st.error("❌ Weak password — missing: " + ", ".join(errors))
         
         if st.button("Create Account", use_container_width=True):
             if not new_user or not new_pw:
