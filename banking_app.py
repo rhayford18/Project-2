@@ -32,7 +32,7 @@ def check_password_strength(pw):
         errors.append("Your password needs to be at least 8 letters")
     if not any(c.isupper() for c in pw):
         errors.append("Your password needs at least one uppercase letter")
-    if not any(c.isdigits() for c in pw):
+    if not any(c.isdigit() for c in pw):
         errors.append("Your password needs to have a number in it")
     return errors
 #Stock helpers
