@@ -185,7 +185,22 @@ def page_dashboard(user, data):
             pl = value - cost
             pl_pct = ((value - cost) / cost *100) if cost > 0 else 0.0
             total_pl += pl
-            pl_str = f"{''}"
+            pl_str = f"{'🟢' if pl >= 0 else '🔴'} ${pl:+,.2f} ({pl_pct:+.2f}%)"
+            rows.append({
+                 "Ticker":       ticker,
+                "Name":         STOCKS.get(ticker, ticker),
+                "Shares":       shares,
+                "Avg Buy":      f"${avg_price:,.2f}",
+                "Live Price":   f"${price:,.2f}",
+                "Day Change":   f"{change:+.2f}%",
+                "Total Value":  f"${value:,.2f}",
+                "Profit / Loss": pl_str
+            })
+        st.table(rows)
+
+        #Profit / loss summary 
+        pl_color = "normal" if total_pl >= 0 else "inverse"
+        st.metric()
 #deposit and widthdraw
 def page_banking(user, data):
     st.header("💵 Deposit & Withdraw")
