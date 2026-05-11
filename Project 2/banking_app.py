@@ -36,9 +36,22 @@ STOCKS = {
     "NFLX": "Netflix Inc",
 }
 
-def get_prices(ticker):
-    base = STOCKS[ticker]["base"]
+@st.cache_data(ttl=300)
+def fetch_stock_data(ticker):
+    try:
+        t = yf.Ticker(ticker):
+        info = t.fast_info
+        price = round(float(info.last_price), 2)
+        prev = round(float(info.previous_close), 2)
+        chnage = round(((price - prev) / prev) * 100, 2) if prev else 0.0
+        return price, change
+    except Exception:
+        return None, None
     
+def get_price(ticker):
+    price, _ = fetch 
+
+
 
 def recommend(portfolio):
     """Simple rule-based stock recommendations."""
