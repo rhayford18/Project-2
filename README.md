@@ -10,4 +10,4 @@ A full-stack banking and stock trading simulator built with Python and Streamlit
 - Live Stock Trading — Buy and sell real stocks using live prices from Yahoo Finance
 - 30-Day Price Charts — View price history for any stock
 - AI Recommendations — Get buy/sell suggestions based on real market movement
-
+- Transaction History — Full log of every deposit, withdrawal, transfer, and trade
