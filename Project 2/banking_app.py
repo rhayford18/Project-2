@@ -154,21 +154,8 @@ def page_dashboard(user, data):
     c3.metric("Total Net Worth",   f"${total:,.2f}")
 
     if portfolio:
-        st.subheader("Your Holdings")
-        rows = []
-        for ticker, shares in portfolio.items():
-            price  = get_price(ticker)
-            change = get_change(ticker)
-            value  = price * shares
-            rows.append({
-                "Ticker": ticker,
-                "Name": STOCKS[ticker]["name"],
-                "Shares": shares,
-                "Price": f"${price:,.2f}",
-                "Day Change": f"{change:+.2f}%",
-                "Total Value": f"${value:,.2f}"
-            })
-        st.table(rows)
+        #chart
+        st.subheader("")
 #deposit and widthdraw
 def page_banking(user, data):
     st.header("💵 Deposit & Withdraw")
