@@ -180,7 +180,12 @@ def page_dashboard(user, data):
             price = get_price(ticker)
             change = get_change(ticker)
             value = price * shares 
-            avg_price = 
+            avg_price = get_avg_buy_price(user, data, ticker)
+            cost = avg_price *shares
+            pl = value - cost
+            pl_pct = ((value - cost) / cost *100) if cost > 0 else 0.0
+            total_pl += pl
+            pl_str = f"{''}"
 #deposit and widthdraw
 def page_banking(user, data):
     st.header("💵 Deposit & Withdraw")
