@@ -28,7 +28,10 @@ def hash_pw(pw):
 STOCKS = {
     "AAPL": "Apple Inc.",
     "TSLA": "Tesla.",
-    "GOOGL": "Google "
+    "GOOGL": "Alphabet Inc",
+    "MSFT": "Microosoft Corp.",
+    ""
+
     
 }
 
