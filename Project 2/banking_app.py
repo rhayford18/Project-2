@@ -65,11 +65,11 @@ def recommend(portfolio):
         change = get_change(ticker)
         price  = get_price(ticker)
         if ticker not in owned and change > 2:
-            recs.append((ticker, info["name"], price, change, "🟢 Strong Buy"))
+            recs.append((ticker, info, price, change, "🟢 Strong Buy"))
         elif ticker in owned and change < -3:
-            recs.append((ticker, info["name"], price, change, "🔴 Consider Selling"))
+            recs.append((ticker, info, price, change, "🔴 Consider Selling"))
         elif ticker not in owned and -1 < change < 1:
-            recs.append((ticker, info["name"], price, change, "🟡 Watch"))
+            recs.append((ticker, info, price, change, "🟡 Watch"))
     return recs[:4]
 
 #auth pages
