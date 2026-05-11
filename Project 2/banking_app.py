@@ -22,10 +22,12 @@ def save_data(data):
         json.dump(data, f, indent=2)
 
 #Password
-
 def hash_pw(pw):
     return hashlib.sha256(pw.encode()).hexdigest()
 
+#Checking Password strength
+def check_password_strength(pw)
+    error = []
 #Stock helpers
 STOCKS = {
     "AAPL": "Apple Inc.",
