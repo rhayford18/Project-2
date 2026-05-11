@@ -36,15 +36,9 @@ STOCKS = {
     "NFLX": "Netflix Inc",
 }
 
-def get_price(ticker):
+def get_prices(ticker):
     base = STOCKS[ticker]["base"]
-    seed = int(datetime.date.today().strftime("%Y%m%d")) + hash(ticker) % 1000
-    random.seed(seed)
-    return round(base * random.uniform(0.95, 1.05), 2)
-
-def get_change(ticker):
-    random.seed(hash(ticker + str(datetime.date.today())))
-    return round(random.uniform(-4.5, 4.5), 2)
+    
 
 def recommend(portfolio):
     """Simple rule-based stock recommendations."""
