@@ -21,6 +21,8 @@ def save_data(data):
     with open(DATA_FILE, "w") as f:
         json.dump(data, f, indent=2)
 
+#Password
+
 def hash_pw(pw):
     return hashlib.sha256(pw.encode()).hexdigest()
 
