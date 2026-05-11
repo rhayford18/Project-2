@@ -155,7 +155,14 @@ def page_dashboard(user, data):
 
     if portfolio:
         #chart
-        st.subheader("")
+        st.subheader("📈 Portfolio Breakdown")
+        import pandas as pd 
+        chart_data = {t: get_price(t) * s for t, s in portfolio.items()}
+        st.bar_chart(pd.DataFrame.from_dict(chart_data, orient="index", columns=["Value"]))
+
+        #Profit and loss table
+        st.subheader("Your holdings")
+        rows = []
 #deposit and widthdraw
 def page_banking(user, data):
     st.header("💵 Deposit & Withdraw")
