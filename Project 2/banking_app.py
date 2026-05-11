@@ -26,14 +26,8 @@ def hash_pw(pw):
 
 #Stock helpers
 STOCKS = {
-    "AAPL": {"name": "Apple Inc.",        "base": 178.0},
-    "TSLA": {"name": "Tesla Inc.",         "base": 245.0},
-    "GOOGL":{"name": "Alphabet Inc.",      "base": 141.0},
-    "MSFT": {"name": "Microsoft Corp.",    "base": 415.0},
-    "AMZN": {"name": "Amazon.com Inc.",    "base": 185.0},
-    "NVDA": {"name": "NVIDIA Corp.",       "base": 875.0},
-    "META": {"name": "Meta Platforms",     "base": 505.0},
-    "NFLX": {"name": "Netflix Inc.",       "base": 628.0},
+    "AAPL": "Apple Inc."
+    
 }
 
 def get_price(ticker):
