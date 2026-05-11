@@ -26,8 +26,11 @@ def hash_pw(pw):
     return hashlib.sha256(pw.encode()).hexdigest()
 
 #Checking Password strength
-def check_password_strength(pw)
-    error = []
+def check_password_strength(pw):
+    errors = []
+    if len(pw) < 8:
+        errors.append("Your password needs to be at least 8 letters")
+
 #Stock helpers
 STOCKS = {
     "AAPL": "Apple Inc.",
