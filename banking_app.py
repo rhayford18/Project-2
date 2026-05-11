@@ -200,7 +200,7 @@ def page_dashboard(user, data):
 
         #Profit / loss summary 
         pl_color = "normal" if total_pl >= 0 else "inverse"
-        st.metric()
+        st.metric("Total Portfolio P/L", f"${total_pl:+,.2f}", delta_color=pl_color)
 #deposit and widthdraw
 def page_banking(user, data):
     st.header("💵 Deposit & Withdraw")

@@ -1,13 +1,20 @@
 {
   "Rayford": {
     "password": "bcac371b54f59945a14aa49e2e408e5d6e4dbc59387f5d8cfc6b015d40d5bb02",
-    "balance": 10000.0,
-    "transactions": [],
+    "balance": 10272.01,
+    "transactions": [
+      {
+        "type": "transfer_in",
+        "from": "CDesouza",
+        "amount": 272.01,
+        "date": "2026-05-11 07:18:32.786064"
+      }
+    ],
     "portfolio": {}
   },
   "CDesouza": {
     "password": "888521646f5dd2fde34e9319d7c3a8da99ee63046df16c60d446b48c3aafd031",
-    "balance": 272.2799999999843,
+    "balance": 0.269999999984293,
     "transactions": [
       {
         "type": "buy",
@@ -335,6 +342,12 @@
         "price": 169.69,
         "total": 16969.0,
         "date": "2026-05-11 00:08:09.602492"
+      },
+      {
+        "type": "transfer_out",
+        "to": "Rayford",
+        "amount": 272.01,
+        "date": "2026-05-11 07:18:32.786064"
       }
     ],
     "portfolio": {
