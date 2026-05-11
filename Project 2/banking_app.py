@@ -223,7 +223,7 @@ def page_stocks(user, data):
         change = get_change(ticker)
         market_rows.append({
             "Ticker": ticker,
-            "Company": info["name"],
+            "Company": info,
             "Price": f"${price:,.2f}",
             "Day Change": f"{change:+.2f}%"
         })
