@@ -83,6 +83,11 @@ def recommend(portfolio):
             recs.append((ticker, info, price, change, "🟡 Watch"))
     return recs[:4]
 
+#Average Price
+def get_avg_buy_price(user, data, ticker):
+    txns = data[user]["transactions"]
+    total_cost = 0.0
+    total_shares = 0
 #auth pages
 def page_login():
     st.title("🏦 Caldwell Banking App")
@@ -163,6 +168,12 @@ def page_dashboard(user, data):
         #Profit and loss table
         st.subheader("Your holdings")
         rows = []
+        total_pl = 0.0
+        for ticker, shares in portfolio.items():
+            price = get_price(ticker)
+            change = get_change(ticker)
+            value = price * shares 
+            avg_price = 
 #deposit and widthdraw
 def page_banking(user, data):
     st.header("💵 Deposit & Withdraw")
