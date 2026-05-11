@@ -3,7 +3,7 @@ import json
 import os 
 import hashlib
 import datetime
-import random
+import yfinance as yf
 from pathlib import Path
 
 #Data helpers
