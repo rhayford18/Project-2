@@ -31,8 +31,8 @@ def check_password_strength(pw):
     if len(pw) < 8:
         errors.append("Your password needs to be at least 8 letters")
     if not any(c.issuper() for c in pw):
-        
-
+        errors.append("Your password needs at least one uppercase letter")
+    if not any()
 #Stock helpers
 STOCKS = {
     "AAPL": "Apple Inc.",
