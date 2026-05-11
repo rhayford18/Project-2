@@ -30,9 +30,10 @@ STOCKS = {
     "TSLA": "Tesla.",
     "GOOGL": "Alphabet Inc",
     "MSFT": "Microosoft Corp.",
-    ""
-
-    
+    "AMZN": "Amazon.com Inc.",
+    "NVDA": "NVIDIA Corp.",
+    "META": "Meta Platforms",
+    "NFLX": "Netflix Inc",
 }
 
 def get_price(ticker):
