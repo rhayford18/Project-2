@@ -30,6 +30,8 @@ def check_password_strength(pw):
     errors = []
     if len(pw) < 8:
         errors.append("Your password needs to be at least 8 letters")
+    if not any(c.issuper() for c in pw):
+        
 
 #Stock helpers
 STOCKS = {
