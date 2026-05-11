@@ -8,3 +8,5 @@ A full-stack banking and stock trading simulator built with Python and Streamlit
 - Deposit & Withdraw — Add or remove cash from your account
 - Transfer — Send money to other users by username
 - Live Stock Trading — Buy and sell real stocks using live prices from Yahoo Finance
+- 30-Day Price Charts — View price history for any stock
+- 
