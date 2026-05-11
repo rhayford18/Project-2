@@ -19,6 +19,35 @@ A full-stack banking and stock trading simulator built with Python and Streamlit
 - yfinance — live stock prices from Yahoo Finance
 - JSON — lightweight local data storage
 
+# Getiing Started 
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/rhayford18/Project-2.git
+cd Project-2
+```
+
+### 2. Install dependencies
+```bash
+pip install streamlit yfinance
+```
+
+### 3. Run the app
+```bash
+streamlit run banking_app.py
+```
+
+## Project Structure
+
+```
+Project-2/
+├── banking_app.py     # main Streamlit application
+├── README.md          # project documentation
+└── data/
+    └── users.json     # saved user accounts and portfolios (auto-generated)
+```
+
+
 # How it works
 
 - Open the app and click Create Account
