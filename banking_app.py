@@ -30,7 +30,7 @@ def check_password_strength(pw):
     errors = []
     if len(pw) < 8:
         errors.append("Your password needs to be at least 8 letters")
-    if not any(c.issuper() for c in pw):
+    if not any(c.isupper() for c in pw):
         errors.append("Your password needs at least one uppercase letter")
     if not any(c.isdigits() for c in pw):
         errors.append("Your password needs to have a number in it")
@@ -384,7 +384,7 @@ def main():
     data = load_data()
 
     with st.sidebar:
-        st.title("🏦 PyBank")
+        st.title("🏦 Caldwell Banking")
         st.markdown(f"👤 **{user}**")
         st.divider()
         page = st.radio("Navigate", ["Dashboard","Banking","Transfer","Stocks","History"])
