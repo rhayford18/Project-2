@@ -30,9 +30,9 @@ def check_password_strength(pw):
     errors = []
     if len(pw) < 8:
         errors.append("Your password needs to be at least 8 letters")
-    if not any(c.isupper() for c in pw):
+    if not any(c.issuper() for c in pw):
         errors.append("Your password needs at least one uppercase letter")
-    if not any(c.isdigit() for c in pw):
+    if not any(c.isdigits() for c in pw):
         errors.append("Your password needs to have a number in it")
     return errors
 #Stock helpers
@@ -88,13 +88,6 @@ def get_avg_buy_price(user, data, ticker):
     txns = data[user]["transactions"]
     total_cost = 0.0
     total_shares = 0
-    for t in txns:
-        if t["type"] == "buy" and t["ticker"] == ticker:
-            total_cost += t["total"]
-            total_shares += t["shares"]
-        elif t["type"] == "sell" and t["ticker"] == ticker:
-            total_shares -= t["shares"]
-    return total_cost / total_shares if total_shares > 0 else 0.0
 #auth pages
 def page_login():
     st.title("🏦 Caldwell Banking App")
@@ -180,27 +173,7 @@ def page_dashboard(user, data):
             price = get_price(ticker)
             change = get_change(ticker)
             value = price * shares 
-            avg_price = get_avg_buy_price(user, data, ticker)
-            cost = avg_price *shares
-            pl = value - cost
-            pl_pct = ((value - cost) / cost *100) if cost > 0 else 0.0
-            total_pl += pl
-            pl_str = f"{'🟢' if pl >= 0 else '🔴'} ${pl:+,.2f} ({pl_pct:+.2f}%)"
-            rows.append({
-                 "Ticker":       ticker,
-                "Name":         STOCKS.get(ticker, ticker),
-                "Shares":       shares,
-                "Avg Buy":      f"${avg_price:,.2f}",
-                "Live Price":   f"${price:,.2f}",
-                "Day Change":   f"{change:+.2f}%",
-                "Total Value":  f"${value:,.2f}",
-                "Profit / Loss": pl_str
-            })
-        st.table(rows)
-
-        #Profit / loss summary 
-        pl_color = "normal" if total_pl >= 0 else "inverse"
-        st.metric("Total Portfolio P/L", f"${total_pl:+,.2f}", delta_color=pl_color)
+            avg_price = 
 #deposit and widthdraw
 def page_banking(user, data):
     st.header("💵 Deposit & Withdraw")
@@ -374,7 +347,7 @@ def page_history(user, data):
 
 #main loop
 def main():
-    st.set_page_config(page_title="Caldwell Banking", page_icon="🏦", layout="wide")
+    st.set_page_config(page_title="PyBank", page_icon="🏦", layout="wide")
 
     if "user" not in st.session_state:
         page_login()
@@ -384,7 +357,7 @@ def main():
     data = load_data()
 
     with st.sidebar:
-        st.title("🏦 Caldwell Banking")
+        st.title("🏦 PyBank")
         st.markdown(f"👤 **{user}**")
         st.divider()
         page = st.radio("Navigate", ["Dashboard","Banking","Transfer","Stocks","History"])
